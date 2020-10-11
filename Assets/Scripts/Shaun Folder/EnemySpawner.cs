@@ -46,8 +46,7 @@ public class EnemySpawner : MonoBehaviour
 	private void TimerEnds()
 	{
 		// Following variables determine which enemy from the
-		// spawnPool will be created and where in the spawnRadius
-		// it will be created.
+		// spawnPool will be created.
 		Instantiate(spawnPool[Random.Range(0, spawnPool.Length)], this.transform, true);
 	}
 }
